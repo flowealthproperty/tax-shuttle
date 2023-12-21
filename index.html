@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shuttle Ticket Reservation</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Shuttle Ticket Reservation Form</h1>
+
+    <div id="shutled" style="display: flex; justify-content: center;">
+        <form id="reservationForm">
+
+            <!-- Personal Information -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <!-- Shuttle Details -->
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" name="departureDate" required>
+    
+            <label for="departureTime">Departure Time:</label>
+            <input type="time" id="departureTime" name="departureTime" required>
+    
+            <label for="departureLocation">Departure Location:</label>
+            <input type="text" id="departureLocation" name="departureLocation" required>
+    
+            <label for="arrivalLocation">Arrival Location:</label>
+            <input type="text" id="arrivalLocation" name="arrivalLocation" required>
+    
+            <!-- Passenger Information -->
+            <label for="adults">Number of Adults:</label>
+            <input type="number" id="adults" name="adults" required>
+    
+            <label for="children">Number of Children (under 12):</label>
+            <input type="number" id="children" name="children" required>
+    
+            <!-- Additional Requests -->
+            <label for="specialRequests">Special Requirements (if any):</label>
+            <textarea id="specialRequests" name="specialRequests"></textarea>
+    
+            <!-- Payment Information -->
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard" required>
+    
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+    
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+    
+            <!-- Terms and Conditions -->
+            <label for="termsConditions">I have read and agree to the terms and conditions.</label>
+            <input type="checkbox" id="termsConditions" name="termsConditions" required>
+    
+            <!-- Submit Button -->
+            <button type="button" onclick="submitReservation()">Submit Reservation</button>
+    
+        </form>
+    
+    </div>
+    <div id="reservationDetails">
+        <!-- Display reservation details here -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
